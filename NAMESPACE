@@ -1,0 +1,8 @@
+import(crmn,limma)
+
+export(ColList,ContrastMatrix,gradcol,GroupSummary,Normalise,LogTransform,PcaPlots,
+TwoGroup,MissingValues, MmsPlot,ScatterPlot,VolcanoPlot,metabolomicsChanges, 
+MetBoxPlots,Dendrogram,RlaPlots,HeatMap,TwoGroupPlots,LinearModelFit)
+
+S3method(print,metabdata)
+S3method(print,results)

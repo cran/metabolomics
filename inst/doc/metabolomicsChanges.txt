@@ -1,0 +1,7 @@
+25 March 2013: metabolomics 0.1.0
+
+- Linked functions in help files
+- Added sample data matrix in the package help file
+- Added help files for metabdata and results classes
+- Reformatted functions for consistency across package
+
