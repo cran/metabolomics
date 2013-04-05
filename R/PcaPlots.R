@@ -1,5 +1,5 @@
 
-PcaPlots <- function(inputdata, y.axis=1, x.axis=2, scale=TRUE, main=NULL,
+PcaPlots <- function(inputdata, y.axis=1, x.axis=2, center=TRUE, scale=TRUE, main=NULL,
     varplot=FALSE, multiplot=FALSE,n=5,cols=NULL, ...)
 {
     # Get groups information
@@ -14,7 +14,7 @@ PcaPlots <- function(inputdata, y.axis=1, x.axis=2, scale=TRUE, main=NULL,
         pca_data <- pca_data[, -const_rows]
     }
 
-    pca <- prcomp(pca_data, scale.=scale, ...)
+    pca <- prcomp(pca_data, scale.=scale, center=center, ...)
     # Get the eigenvectors (loadings)
     eigenvecs <- pca$rotation
 
@@ -24,7 +24,7 @@ PcaPlots <- function(inputdata, y.axis=1, x.axis=2, scale=TRUE, main=NULL,
 
     if (varplot) {
         # Plot the explained variance
-        barplot(summ$importance[2, ],
+        barplot(summ$importance[2,c(1:10) ],
             col="#ee3333",                  # colour to plot bars
             main="Variance",               # plot title
             xlab="Principal Component",    # x-axis title
@@ -55,7 +55,7 @@ PcaPlots <- function(inputdata, y.axis=1, x.axis=2, scale=TRUE, main=NULL,
     }
 
     # Plot PCA scores with sample names
-    pca_mat <- cbind(pca_scores[, y.axis], pca_scores[, x.axis])
+    pca_mat <- cbind(pca_scores[, x.axis],pca_scores[, y.axis])
     x_percent <- sprintf("%.2f", importance[x.axis] * 100)
     y_percent <- sprintf("%.2f", importance[y.axis] * 100)
     pic_gen(pca_mat,
@@ -74,13 +74,12 @@ PcaPlots <- function(inputdata, y.axis=1, x.axis=2, scale=TRUE, main=NULL,
         cols_used=cols_used,
         pch_used=pch_used
     )
-    eigen_mat <- cbind(eigenvecs[, y.axis], eigenvecs[, x.axis])
+    eigen_mat <- cbind(eigenvecs[, x.axis],eigenvecs[, y.axis])
     # Loadings plot
     pic_gen(eigen_mat,
         "PCA Loading Plot",
         x_label=paste("PC", x.axis," (", x_percent, "%)", sep=""),
         y_label=paste("PC", y.axis," (", y_percent, "%)", sep=""),
-        plot_labels=colnames(inputdata),
         cols_used="black"
         #text_on=FALSE
     )

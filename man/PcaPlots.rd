@@ -4,7 +4,7 @@
 \description{Produces PCA plots.}
 
 \usage{
-PcaPlots(inputdata, y.axis = 1, x.axis = 2, scale = TRUE, main = NULL,
+PcaPlots(inputdata, y.axis = 1, x.axis = 2, center=TRUE, scale = TRUE, main = NULL,
     varplot = FALSE, multiplot = FALSE, n = 5, cols = NULL, ...)
 }
 
@@ -14,8 +14,11 @@ PcaPlots(inputdata, y.axis = 1, x.axis = 2, scale = TRUE, main = NULL,
     \item{y.axis}{The principal component to be plotted on the \emph{y}-axis.}
     
     \item{x.axis}{The principal component to be plotted on the \emph{x}-axis.}
+
+    \item{center}{A logical indicating whether the variables should be
+    scaled to have zero mean.}
     
-    \item{scale}{A logical indicating whether whether the variables should be
+    \item{scale}{A logical indicating whether the variables should be
     scaled to have unit variance before the analysis takes place.}
     
     \item{main}{Plot title.}
@@ -43,6 +46,6 @@ PcaPlots(inputdata, y.axis = 1, x.axis = 2, scale = TRUE, main = NULL,
 \examples{
     data(treated)
     treated.log <- LogTransform(treated)$output
-    PcaPlots(treated.log, multiplot = TRUE, varplot = TRUE)
+    PcaPlots(treated.log, scale=FALSE, center=TRUE, multiplot = TRUE, varplot = TRUE)
 }
 

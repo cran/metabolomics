@@ -22,8 +22,8 @@
     \tabular{ll}{
         Package: \tab metabolomics \cr
         Type: \tab Package \cr
-        Version: \tab 0.1.0 \cr
-        Date: \tab 2013-03-25 \cr
+        Version: \tab 0.1.1 \cr
+        Date: \tab 2013-04-05 \cr
         License: \tab GPL-3 \cr
         LazyLoad: \tab yes \cr
     }

@@ -5,3 +5,6 @@
 - Added help files for metabdata and results classes
 - Reformatted functions for consistency across package
 
+05 April 2013: metabolomics 0.1.1
+
+-'center' option was added to the 'PcaPlots' function

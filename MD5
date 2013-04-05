@@ -1,4 +1,4 @@
-86f3316912f6c29e4b674ee35c1b9c20 *DESCRIPTION
+9c506837eab51e69b81b5861d3861745 *DESCRIPTION
 bc1a2fd50704d2e11c811e5449ebba0e *NAMESPACE
 f7350551fd27be7a08d86d28a2457ea7 *R/ColList.r
 e1d264d2cb09b1a22294eb1bf9eae940 *R/ContrastMatrix.R
@@ -12,7 +12,7 @@ b258a31781d820965e518a2bb6273df9 *R/MetBoxPlots.r
 f2fdb46f50a48a2c9c13c1c1ae93f788 *R/MissingValues.r
 46f3a95b139c7715de8fdfbb1b68e4dd *R/MmsPlot.R
 8219065e680aa738444694a4f5d9494e *R/Normalise.r
-4f77a707dd67806930698f6a4914f4d0 *R/PcaPlots.R
+1f1884087680e4257287daf7a0928abc *R/PcaPlots.R
 b3a8cf204375755e47c0d861830421f8 *R/PchList.R
 961963a14fc7ed448b3935a338a1cfaa *R/RainbowCols.r
 544aca7b4efe051d085bf5ef2a0a4265 *R/RlaPlots.r
@@ -29,7 +29,7 @@ cb037e58b222fb0fe7ff158c2a87bfe0 *R/gradcol.r
 5402a453ce6c33cf0fd0d5d0b3e72c2a *R/print.metabdata.R
 94f6832cb285f68d465a76b9ea164839 *R/print.results.R
 6366a978c8bd113c5175e65460ca038f *data/treated.RData
-85bfb030d45695e87f012a8ad511fd88 *inst/doc/metabolomicsChanges.txt
+49d6ab7cec468ba88e167b6a059d471b *inst/doc/metabolomicsChanges.txt
 27a761f7a7d085a4e4d4f88482e062c2 *man/ColList.rd
 22ef5bad541e1633febbe7e3884218f2 *man/ContrastMatrix.Rd
 7d5937eef0b33c2be7630721fcbd9323 *man/Dendrogram.rd
@@ -42,7 +42,7 @@ fb70b1d6f87086cd3639cdb8a355a6b6 *man/GroupSummary.rd
 d2815226a07e114e4b4287229e555c2d *man/MissingValues.rd
 41b4115de4341700cf4ff98c091179b5 *man/MmsPlot.rd
 2c689446c5fcb486b72c852ca816f0e7 *man/Normalise.rd
-27bb473ec6e2b187889bb28236127bb8 *man/PcaPlots.rd
+2c8d067f7ea3420db08eb091d76e0655 *man/PcaPlots.rd
 6ec858020b7bee355e16020f1aeda6c1 *man/RlaPlots.rd
 669b521d2e7cba00759c751ac67c9f05 *man/ScatterPlot.rd
 5991e3f4ef20126f729546f1475af180 *man/TwoGroup.rd
@@ -51,9 +51,9 @@ fc8aac22bd9de48d29d5a85a51485e5d *man/TwoGroupPlots.Rd
 367cc83d927084c223b400c3aeb4bbb7 *man/editcolnames.rd
 e06d856922de37d2af46c9d719391197 *man/gradcol.rd
 1994be43e4e8b5faf4c0868c5a67ac5a *man/metabdata.Rd
-7c286fd0bab6ea9842335e341e77b774 *man/metabolomics-package.Rd
+7aa15fe5e6a5c6e9bb53d77d316255bb *man/metabolomics-package.Rd
 03f82ed1b5c825be51ffbcfb6faa43ae *man/metabolomicsChanges.rd
-b35237a60180a23ceda5b70403025aba *man/randomseed.Rd
+c4c6b96cfeb53494df1b0e68d9e76873 *man/randomseed.Rd
 5a6a8574e306ab3c91beea702d725294 *man/results.Rd
 35ffcf6e61b327f8f24ee7c56f084089 *man/treated.rd
 ba3d1b42caecaf50be08065b574cf1aa *results.csv
