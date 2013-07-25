@@ -1,4 +1,4 @@
-9c506837eab51e69b81b5861d3861745 *DESCRIPTION
+bccfb2846e6b42a34d257d9095b4772b *DESCRIPTION
 bc1a2fd50704d2e11c811e5449ebba0e *NAMESPACE
 f7350551fd27be7a08d86d28a2457ea7 *R/ColList.r
 e1d264d2cb09b1a22294eb1bf9eae940 *R/ContrastMatrix.R
@@ -25,7 +25,7 @@ b3a8cf204375755e47c0d861830421f8 *R/PchList.R
 cb037e58b222fb0fe7ff158c2a87bfe0 *R/gradcol.r
 1291b056620932a6d02a390e5dd0d138 *R/heatmap_fn.r
 6e45b2f1d341b9add49ff9e39150dcc1 *R/miscellaneous.r
-4d98678d8703fd03aaeed7823076350b *R/pic_gen.R
+38a0ea1d1bce63f35f8c04ff2a67c163 *R/pic_gen.R
 5402a453ce6c33cf0fd0d5d0b3e72c2a *R/print.metabdata.R
 94f6832cb285f68d465a76b9ea164839 *R/print.results.R
 6366a978c8bd113c5175e65460ca038f *data/treated.RData
@@ -51,9 +51,8 @@ fc8aac22bd9de48d29d5a85a51485e5d *man/TwoGroupPlots.Rd
 367cc83d927084c223b400c3aeb4bbb7 *man/editcolnames.rd
 e06d856922de37d2af46c9d719391197 *man/gradcol.rd
 1994be43e4e8b5faf4c0868c5a67ac5a *man/metabdata.Rd
-7aa15fe5e6a5c6e9bb53d77d316255bb *man/metabolomics-package.Rd
+3b52f50566583dcb8da130b23b245c49 *man/metabolomics-package.Rd
 03f82ed1b5c825be51ffbcfb6faa43ae *man/metabolomicsChanges.rd
 c4c6b96cfeb53494df1b0e68d9e76873 *man/randomseed.Rd
 5a6a8574e306ab3c91beea702d725294 *man/results.Rd
 35ffcf6e61b327f8f24ee7c56f084089 *man/treated.rd
-ba3d1b42caecaf50be08065b574cf1aa *results.csv

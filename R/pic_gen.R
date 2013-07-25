@@ -3,7 +3,7 @@ pic_gen <- function(input_matrix, plot_title,
     text_on=TRUE, dev='x11', filename='', cols_used, pch_used=NULL)
 {
     if (dev == 'x11') {
-        x11()#dev.new()
+        dev.new()
     } else if (dev == 'png') {
         png(filename,
             bg="white",                    # background colour
