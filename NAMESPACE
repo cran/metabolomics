@@ -1,4 +1,4 @@
-import(crmn,limma)
+
 
 export(ColList,ContrastMatrix,gradcol,GroupSummary,Normalise,LogTransform,PcaPlots,
 TwoGroup,MissingValues, MmsPlot,ScatterPlot,VolcanoPlot,metabolomicsChanges, 

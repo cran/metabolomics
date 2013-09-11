@@ -30,15 +30,10 @@ TTests <- function(inputdata, alternative="two.sided", paired=FALSE,
     
     #
     #    Prepare the supporting data for the test
-    #
-    # Determine the number of samples in each group
-    # (A is levels(groups)[1])
-    nA <- length(which(groups == levels(groups)[1]))
-    nB <- length(which(groups == levels(groups)[2]))
-    
+
     # Separate the groups
-    x <- t(ttest_data_t[, 1:nA])
-    y <- t(ttest_data_t[, nA + 1:nB])
+    x <- t(ttest_data_t[, which(groups==grp_levs[1])])
+    y <- t(ttest_data_t[, which(groups==grp_levs[2])])
     # Create an empty matrix
     vals <- matrix(NA, nrow(ttest_data_t), ncol=3)
     

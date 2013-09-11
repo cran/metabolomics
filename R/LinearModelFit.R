@@ -78,7 +78,7 @@ LinearModelFit <- function(datamat,
         se <- beta / tstat
     } else {
         tstat <- sweep(
-            (ebfit$coef / ebfit$stdev.unscaled), 1, ebfit$sigma, "/"
+            data.matrix(ebfit$coef / ebfit$stdev.unscaled), 1, ebfit$sigma, "/"
         )
         tpval <- 2 * pt(-abs(tstat), df=ebfit$df.residual)
         ebfit$t <- tstat
