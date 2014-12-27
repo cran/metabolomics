@@ -6,7 +6,7 @@
 }
 
 \usage{
-HeatMap(inputdata, colramp = gradcol(75, "purple", "green"), 
+HeatMap(inputdata, colramp = redgreen(75), 
     scale = c("row", "column", "none"), 
     dendrogram = c("column", "row", "both", "none"),
     distmethod = "euclidean", aggmethod = "complete", 
@@ -47,9 +47,4 @@ HeatMap(inputdata, colramp = gradcol(75, "purple", "green"),
     Alysha M De Livera, Jairus B Bowne
 }
 
-\examples{
-    data(treated)
-    treated.log <- LogTransform(treated)$output
-    dev.new()
-    HeatMap(treated.log, scale = "row", dendrogram = "col", colramp=gradcol(75, "red", "green"))
-}
+

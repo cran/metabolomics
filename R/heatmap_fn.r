@@ -80,7 +80,7 @@ heatmap_fn <- function(inputdata,
     # This should be sufficient - I can't think of what else you may need
     # to test in order to ensure a proper colour palette.
     if (is.null(col)) {
-        col=gradcol(75, "purple","green") # This is default for gradcol.
+        col=redgreen(75)
     }
     if (is.null(Rowv) || is.na(Rowv)) {
         Rowv <- FALSE

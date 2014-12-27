@@ -1,5 +1,6 @@
 ColList <- function(n)
 {
+    n<-round(n)
     if (n <= 15) {
         col_list <- c (
             "#ee3333",                     # red
@@ -18,9 +19,9 @@ ColList <- function(n)
             "#b5dafe",                     # sky
             "#000000"                      # black
         )
-    } else {
-        col_list <- RainbowCols(n)
-    }
+    } else 
+        col_list <- NULL
+    
     
     return(col_list)
 }

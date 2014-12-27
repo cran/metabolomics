@@ -1,5 +1,5 @@
 HeatMap <- function(inputdata, 
-    colramp=gradcol(75, "purple", "green"),    
+    colramp=redgreen(75),    
     scale=c("row", "column", "none"), 
     dendrogram=c("column", "row", "both", "none"), distmethod="euclidean",
     aggmethod="complete", margins=c(5, 5), key=TRUE,
